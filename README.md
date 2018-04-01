@@ -28,7 +28,7 @@
 - **src/CoupleManager/views.py**<br/><br/>
   - 장고의 **MTV**구조에서 **V(View)** 를 담당<br/>
   - **CoupleManager**라는 클래스를 만들어 기능수행<br/>
- - `template_name`을 사용해 **프런트와 연결**<br/> 
+  - `template_name`을 사용해 **프런트와 연결**<br/> 
   - Template에서 GET으로 받아온 데이터를 CoupleManager클래스에 **파라미터**로 넘겨 <br/>출력된 텍스트를 **Json형식**으로 **Return**<br/>
   - Male, Female에 대한 값을 받아오지 못하면 {"error":"True"} 값을 넘겨 **Validation 수행**<br/>
   
