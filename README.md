@@ -19,18 +19,18 @@
 ### 코드 설명
 
 - **src/CoupleManager/models.py**<br/><br/>
-  - 장고의 MTV구조에서 M(Model)을 담당<br/>
-  - Male, Female 모델 클래스 정의<br/>
-  - 각 필드에 validation함수를 만들어 적용<br/>
-  - `pre_save`를 사용해 입력받은 취미를 List로 재입력<br/>
-  - `posr_save`를 사용해 저장된 데이터 Json형태로 출력<br/>
+  - 장고의 **MTV**구조에서 **M(Model)**을 담당<br/>
+  - Male, Female **모델 클래스** 정의<br/>
+  - 각 필드에 **validation함수**를 만들어 적용<br/>
+  - `pre_save`를 사용해 입력받은 취미를 **List**로 재입력<br/>
+  - `posr_save`를 사용해 저장된 데이터 **Json형태**로 출력<br/>
   
 - **src/CoupleManager/views.py**<br/><br/>
-  - 장고의 MTV구조에서 V(View)를 담당<br/>
-  - CoupleManager라는 클래스를 만들어 기능수행<br/>
-  - `template_name`을 사용해 프런트와 연결<br/>
-  - Template에서 GET으로 받아온 데이터를 CoupleManager클래스에 파라미터로 넘겨 출력된 텍스트를 Json형식으로 Return<br/>
-  - Male, Female에 대한 값을 받아오지 못하면 {"error":"True"} 값을 넘겨 Validation 수행<br/>
+  - 장고의 **MTV**구조에서 **V(View)** 를 담당<br/>
+  - **CoupleManager**라는 클래스를 만들어 기능수행<br/>
+  - `template_name`을 사용해 **프런트와 연결**<br/>
+  - Template에서 GET으로 받아온 데이터를 CoupleManager클래스에 **파라미터**로 넘겨 출력된 텍스트를 **Json형식**으로 **Return**<br/>
+  - Male, Female에 대한 값을 받아오지 못하면 {"error":"True"} 값을 넘겨 **Validation 수행**<br/>
   
 
   
