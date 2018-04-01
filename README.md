@@ -15,6 +15,8 @@
 ```bash
 (venv)Project\CUPIST_test\src> python manage.py runserver
 ```
+> 관리자페이지 : localhost:8000/admin <br/>
+> 홈페이지 : localhost:8000/
 
 ### 코드 설명
 
@@ -31,6 +33,30 @@
   - `template_name`을 사용해 **프런트와 연결**<br/>
   - Template에서 GET으로 받아온 데이터를 CoupleManager클래스에 **파라미터**로 넘겨 <br/>출력된 텍스트를 **Json형식**으로 **Return**<br/>
   - Male, Female에 대한 값을 받아오지 못하면 {"error":"True"} 값을 넘겨 **Validation 수행**<br/>
-  
 
-  
+- **src/CoupleManager/views.py**<br/><br/>
+  - 장고의 **MTV**구조에서 **V(View)** 를 담당<br/>
+  - **CoupleManager**라는 클래스를 만들어 기능수행<br/>
+  - `template_name`을 사용해 **프런트와 연결**<br/>
+  - Template에서 GET으로 받아온 데이터를 CoupleManager클래스에 **파라미터**로 넘겨 <br/>출력된 텍스트를 **Json형식**으로 **Return**<br/>
+  - Male, Female에 대한 값을 받아오지 못하면 {"error":"True"} 값을 넘겨 **Validation 수행**<br/>
+  
+- **src/CoupleManager/urls.py**<br/><br/>
+  - view에 대한 url설정을 해주는 곳<br/>
+
+- **src/CoupleManager/admin.py**<br/><br/>
+  - models.py에서 정의한 테이블을 관리자페이지에서 볼 수 있도록 설정<br/>
+
+
+- **src/templates/snippets**<br/><br/>
+  - 글로벌하게 설정하고 싶은 Javascript 혹은 CSS에 대한 내용<br/>
+
+- **src/templates/base.html**<br/><br/>
+  - 위에서 설정한 값을 모두 포함한 html 틀<br/>
+  - Tamplate Tag를 사용<br/>
+ 
+- **src/templates/CoupleManager/list.html**<br/><br/>
+  - views.py에서 정의한 UserList 뷰 클래스와 연결되는 프런트엔드<br/>
+
+- **src/templates/CoupleManager/list_js.html**<br/><br/>
+  - list.html에서 선택하기 버튼 클릭에 대한 스크립트 정의<br/>
