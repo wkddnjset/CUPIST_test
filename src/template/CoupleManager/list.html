@@ -51,7 +51,7 @@
                 직업 : {{ male.job }} <br/>
                 위치 : {{ male.location }} <br/>
                 취미 : {{ male.hobbys }} <br/>
-                {% if male.is_fulfilled|truncatechars:10 == "Flase" %}
+                {% if male.is_fulled|truncatechars:10 == 'False' %}
                 군필여부 : 미필
                 {% else %}
                 군필여부 : 군필
