@@ -1,0 +1,11 @@
+<!-- 선택하기 클릭에 대한 스크립트 -->
+<script>
+	$(".male").click(function() {
+		var male_name = $(this).parent().find('h5').text().slice(0, -1);
+		$(".male_input").val(male_name)
+	});
+	$(".female").click(function() {
+		var female_name = $(this).parent().find('h5').text().slice(0, -1);
+		$(".female_input").val(female_name)
+	});
+</script>
